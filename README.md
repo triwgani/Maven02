@@ -120,13 +120,24 @@ There are several steps in this phase in order to connect and shape the Data use
 - Deselecting the "Autodetect new relationships after data is loaded" option in the Data Load tab
 - Making sure that Locale for import is set to "English (United States)" in the Regional Settings tab
 
-**2. Connect to the MavenMarket_Customers csv file by:
+**2. Connect to the MavenMarket_Customers csv file by:**
 
 - Naming the table "Customers", and making sure that headers have been promoted
 - Confirming that data types are accurate (Note: "customer_id" should be whole numbers, and both "customer_acct_num" and "customer_postal_code" should be text)
 - Adding a new column named "full_name" to merge the the "first_name" and "last_name" columns, separated by a space
 - Creating a new column named "birth_year" to extract the year from the "birthdate" column, and format as text
 - Creating a conditional column named "has_children" which equals "N" if "total_children" = 0, otherwise "Y"
+
+**3. Connect to the MavenMarket_Products csv file by:**
+
+- Naming the table "Products" and making sure that headers have been promoted
+- Confirming that data types are accurate (Note: "product_id" should be whole numbers, "product_sku" should be text), "product_retail_price" and "product_cost" should be decimal numbers)
+- Using the statistics tools to return the number of distinct product brands, followed by distinct product names and conducting Spot check to see **111 brands and 1,560 product names**
+- Adding a calculated column named "discount_price", equal to 90% of the original retail price and formating as a fixed decimal number, and then use the rounding tool to round to 2 digits
+- Selecting "product_brand" and use the Group By option to calculate the average retail price by brand, and name the new column "Avg Retail Price". Conducting Spot check to see an average retail price of $2.18 for Washington products, and $2.21 for Green Ribbon
+- Deleting the last applied step to return the table to its pre-grouped state
+- Replacing "null" values with zeros in both the "recyclable" and "low-fat" columns
+
 
 ## Building a Relational Model
 

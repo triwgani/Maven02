@@ -120,6 +120,8 @@ There are several steps in this phase in order to connect and shape the Data use
 - Deselecting the "Autodetect new relationships after data is loaded" option in the Data Load tab
 - Making sure that Locale for import is set to "English (United States)" in the Regional Settings tab
 
+![](DisableAutodetect.png)
+
 **2. Connect to the MavenMarket_Customers csv file by:**
 
 - Naming the table "Customers", and making sure that headers have been promoted

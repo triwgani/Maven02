@@ -113,6 +113,13 @@ There are 7 Datasets used in this project, i.e.:
 
 ## Connecting and Shaping the Data
 
+There are several steps in this phase in order to connect and shape the Data used in this case.
+
+**1. Update your Power BI options and settings as follows:** 
+
+- Deselect the "Autodetect new relationships after data is loaded" option in the Data Load tab
+- Make sure that Locale for import is set to "English (United States)" in the Regional Settings tab
+
 ## Building a Relational Model
 
 ## Adding Calculated Fields

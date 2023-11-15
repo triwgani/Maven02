@@ -115,10 +115,18 @@ There are 7 Datasets used in this project, i.e.:
 
 There are several steps in this phase in order to connect and shape the Data used in this case.
 
-**1. Update your Power BI options and settings as follows:** 
+**1. Update Power BI options and settings by:** 
 
-- Deselect the "Autodetect new relationships after data is loaded" option in the Data Load tab
-- Make sure that Locale for import is set to "English (United States)" in the Regional Settings tab
+- Deselecting the "Autodetect new relationships after data is loaded" option in the Data Load tab
+- Making sure that Locale for import is set to "English (United States)" in the Regional Settings tab
+
+**2. Connect to the MavenMarket_Customers csv file by:
+
+- Naming the table "Customers", and making sure that headers have been promoted
+- Confirming that data types are accurate (Note: "customer_id" should be whole numbers, and both "customer_acct_num" and "customer_postal_code" should be text)
+- Adding a new column named "full_name" to merge the the "first_name" and "last_name" columns, separated by a space
+- Creating a new column named "birth_year" to extract the year from the "birthdate" column, and format as text
+- Creating a conditional column named "has_children" which equals "N" if "total_children" = 0, otherwise "Y"
 
 ## Building a Relational Model
 

@@ -138,6 +138,39 @@ There are several steps in this phase in order to connect and shape the Data use
 - Deleting the last applied step to return the table to its pre-grouped state
 - Replacing "null" values with zeros in both the "recyclable" and "low-fat" columns
 
+**4. Connect to the MavenMarket_Stores csv file by:**
+
+- Naming the table "Stores" and making sure that headers have been promoted
+- Confirming that data types are accurate (Note: "store_id" and "region_id" should be whole numbers)
+- Adding a calculated column named "full_address", by merging "store_city", "store_state", and "store_country", separated by a comma and space (hint: use a custom separator)
+- Adding a calculated column named "area_code", by extracting the characters before the dash ("-") in the "store_phone" field 
+
+**5. Connect to the MavenMarket_Regions csv file by:**
+
+- Naming the table "Regions" and making sure that headers have been promoted
+- Confirming that data types are accurate (Note: "region_id" should be whole numbers)
+
+**6. Connect to the MavenMarket_Calendar csv file by:**
+
+- Naming the table "Calendar" and making sure that headers have been promoted
+- Using the date tools in the query editor to add the following columns:
+    > Start of Week (starting Sunday, Name of Day, Start of Month, Name of Month, Quarter of Year, Year
+
+**7. Connect to the MavenMarket_Returns csv file by:**
+
+- Naming the table "Return_Data" and making sure that headers have been promoted
+- Confirming that data types are accurate (all ID columns and quantity should be whole numbers)
+
+**8. Add a new folder on your desktop (or in your documents) named "MavenMarket Transactions", containing both the MavenMarket_Transactions_1997 and MavenMarket_Transactions_1998 csv files by:**
+
+- Connecting to the folder path, and choosing "Edit" (vs. Combine and Edit)
+- Clicking the "Content" column header (double arrow icon) to combine the files, then removing the "Source.Name" column
+- Naming the table "Transaction_Data", and confirming that headers have been promoted
+- Confirming that data types are accurate (all ID columns and quantity should be whole numbers) and conducting Spot check to see data from 1/1/1997 through 12/30/1998 in the "transaction_date" column
+
+**9. With the exception of the two data tables, disable "Include in Report Refresh", then Close & Apply by:**
+
+- Confirming that all 7 tables are now accessible within both the RELATIONSHIPS view and the DATA view
 
 ## Building a Relational Model
 

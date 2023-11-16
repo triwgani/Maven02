@@ -113,58 +113,6 @@ There are 7 Datasets used in this project, i.e.:
 | quantity | Whole Number |
 
 
-**2. Products Table Dataset (MavenMarket_Products.csv)**
-
-
-  
-
-
-**4. Regions Table Dataset (MavenMarket_Regions.csv)**
-
-| **Field Name** | **Data Type** |
-| ------ | ------ |
-| region_id | Whole Number |
-| sales_district | Text |
-| sales_region | Text |
-
-**5. Stores Table Dataset (MavenMarket_Stores.csv)**
-
-| **Field Name** | **Data Type** |
-| ------ | ------ |
-| store_id | Whole Number |
-| region_id | Whole Number |
-| store_type | Text |
-| store_name | Text |
-| store_street_address | Text |
-| store_city | Text |
-| store_state | Text |
-| store_country | Text |
-| store_phone | Text |
-| first_opened_date | Date |
-| last_remodel_date | Date |
-| total_sqft | Whole Number |
-| grocery_sqft | Whole Number |
-| full_address | Text |
-| area_code | Text |
-
-**6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)**
-
-| **Field Name** | **Data Type** |
-| ------ | ------ |
-| transaction_date | Date |
-| stock_date | Date |
-| product_id | Whole Number |
-| customer_id | Whole Number |
-| store_id | Whole Number |
-
-**7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)**
-
-| **Field Name** | **Data Type** |
-| ------ | ------ |
-|return_date | Date |
-| product_id | Whole Number |
-| store_id | Whole Number |
-| quantity | Whole Number |
 
 ## Connecting and Shaping the Data
 

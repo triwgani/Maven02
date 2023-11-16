@@ -252,3 +252,5 @@ There are 2 spots I used to add Calculation Fields and DAX, the **Data View** an
 ![](MeasuresTable.png)
 
 ## Building Interactive Report
+
+## Analysis to answer the Problem Questions

@@ -250,7 +250,7 @@ There are 2 spots in which I worked to add Calculation Fields and DAX, i.e. the 
 - Creating new measures named  "Last Month Transactions", "Last Month Revenue", "Last Month Profit", and "Last Month Returns", and creating a matrix with "Start of Month" on rows to confirm accuracy for Spot check
 - Creating a new measure named "Revenue Target" based on a 5% lift over the previous month revenue, and formating as $, and conducting Spot check to see a Revenue Target of $99,223 in March 1998
 
-![](MeasuresTable.png)
+![](MeasureTable.png)
 
 ## Building Interactive Report
 

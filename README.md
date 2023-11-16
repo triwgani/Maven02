@@ -9,9 +9,10 @@ This Project Case is part of the Microsoft Power BI Desktop for Business Intelli
 
 ## Datasets
 There are 7 Datasets used in this project, i.e.:
-1. Customer Table Dataset (MavenMarket_Calendar.csv)
 
-| Field Name | Data Type |
+**1. Customer Table Dataset (MavenMarket_Calendar.csv)**
+
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | customer_id | Whole Number|
 | customer_acct_num | Text |
@@ -37,9 +38,9 @@ There are 7 Datasets used in this project, i.e.:
 | birth_year | Text |
 | has_children | Y/N |
 
-2. Products Table Dataset (MavenMarket_Products.csv)
+**2. Products Table Dataset (MavenMarket_Products.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | product_id | Whole Number |
 | product_brand | Text |
@@ -52,9 +53,9 @@ There are 7 Datasets used in this project, i.e.:
 | low_fat | Decimal Number |
 | discount_price | Fixed Decimal Number (Currency) |
   
-3. Calendar Table Dataset (MavenMarket_Calendar.csv)
+**3. Calendar Table Dataset (MavenMarket_Calendar.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | date | Date |
 | Start of Week | Date |
@@ -64,17 +65,17 @@ There are 7 Datasets used in this project, i.e.:
 | Quarter | Whole Number |
 | Year | Whole Number |
 
-4. Regions Table Dataset (MavenMarket_Regions.csv)
+**4. Regions Table Dataset (MavenMarket_Regions.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | region_id | Whole Number |
 | sales_district | Text |
 | sales_region | Text |
 
-5. Stores Table Dataset (MavenMarket_Stores.csv)
+**5. Stores Table Dataset (MavenMarket_Stores.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | store_id | Whole Number |
 | region_id | Whole Number |
@@ -92,9 +93,9 @@ There are 7 Datasets used in this project, i.e.:
 | full_address | Text |
 | area_code | Text |
 
-6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)
+**6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 | transaction_date | Date |
 | stock_date | Date |
@@ -102,9 +103,9 @@ There are 7 Datasets used in this project, i.e.:
 | customer_id | Whole Number |
 | store_id | Whole Number |
 
-7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)
+**7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)**
 
-| Field Name | Data Type |
+| **Field Name** | **Data Type** |
 | ------ | ------ |
 |return_date | Date |
 | product_id | Whole Number |

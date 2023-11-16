@@ -199,16 +199,12 @@ There are several steps in this phase in order to build a Relational Model.
 - Connecting Return_Data to Products, Calendar, and Stores using valid primary/foreign keys
 - Connecting Stores to Regions as a "snowflake" schema
 
-![](1stStep.png)
-
 **2. Confirm the following:**
 
 - All relationships follow one-to-many cardinality, with primary keys (1) on the lookup side and foreign keys (*) on the data side
 - Filters are all one-way (no two-way filters)
 - Filter context flows "downstream" from lookup tables to data tables
 - Data tables are connected via shared lookup tables (not directly to each other)
-
-![](2ndStep.png)
 
 **3. Hide all foreign keys in both data tables from Report View, as well as "region_id" from the Stores table**
 
@@ -219,6 +215,7 @@ There are several steps in this phase in order to build a Relational Model.
 - In the Stores table, categorizing "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address 
 
 The Steps above results in the following Realtion Model:
+
 ![](RelationModel.png)
 
 ## Adding Calculated Fields and DAX (Data Analysis eXpression)

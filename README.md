@@ -214,12 +214,12 @@ There are several steps in this phase in order to build a Relational Model.
 - In the Customers table, categorizing "customer_city" as City, "customer_postal_code" as Postal Code, and "customer_country" as Country/Region
 - In the Stores table, categorizing "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address 
 
-The Steps above results in the following Realtion Model:
+The Steps above results in the following Relation Model:
 
 ![](RelationModel.png)
 
 ## Adding Calculated Fields and DAX (Data Analysis eXpression)
-There are 2 spots I used to add Calculation Fields and DAX, the **Data View** and the **Report View**
+There are 2 spots in which I worked to add Calculation Fields and DAX, i.e. the **Data View** and the **Report View**.
 
 **1. In the DATA view, add the following calculated columns by:**
 

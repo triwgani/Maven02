@@ -12,6 +12,33 @@ There are 7 Datasets used in this project, i.e.:
 
 **1. Customer Table Dataset (MavenMarket_Calendar.csv)**
 
+
+
+**2. Products Table Dataset (MavenMarket_Products.csv)**
+
+
+
+**3. Calendar Table Dataset (MavenMarket_Calendar.csv)**
+
+
+
+**4. Regions Table Dataset (MavenMarket_Regions.csv)**
+
+
+
+**5. Stores Table Dataset (MavenMarket_Stores.csv)**
+
+
+
+**6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)**
+
+
+
+**7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)**
+
+
+**1. Customer Table Dataset (MavenMarket_Calendar.csv)**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | customer_id | Whole Number|

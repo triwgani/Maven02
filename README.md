@@ -3,13 +3,16 @@
 
 ![](MavenMarket.png)
 
-This Project Case is part of the Microsoft Power BI Desktop for Business Intelligence Course on [Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/) online platform by Maven Analytics. In this case, I worked with data from **Maven Market**, a multi-national grocery chain with locations in **Canada, Mexico** and the **United States**. I worked through the entire business intelligence workflow: **connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report**.
+This Project Case is part of the Microsoft Power BI Desktop for Business Intelligence Course on [Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/) online platform by Maven Analytics. In this case, I am being put in the point of view of a Business Intelligence Analyst in **Maven Market**, a Multinational Grocery Chain with locations in **Canada, Mexico** and the **United States**. My role is to transform raw data into a dashboard report to help the Management Team track the KPI, montor and compare the performance, as well as identifiy some insights. I worked through the entire business intelligence workflow: **connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report**.
 
 ## Problem Questions
-The Company Management Team would like to find out the Topline Performance of their products. This will be delivered by:
+The Management Team would like to find out the Topline Performance of their products. This must be delivered by:
 - Defining the Top 30 Product Brands with highest Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
-- Providing KPI information displaying the Current Month Transactions vs Last Month Transaction, Current Month Profit vs Last Month Profit, Current Month Returns vs Last Month Returns.
+- Providing KPI information displaying the Current Month Transactions vs Last Month Transaction, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
 - Displaying a visual geographical map showing Transaction by Cities in which the company stores are operating.
+- Providing information of Total Transaction in each of the country that can be drilled up/down so that the granularity of the information can be determined in either level of country, city, or state.
+- The management would like to know the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
+
 ## Datasets
 There are 7 Datasets used in this project, i.e.:
 
@@ -342,7 +345,12 @@ The overall tables created the complete Realtion Model for all the data loaded i
 
 ## Building Interactive Report
 
-The built report is to provide information in the Problem Questions Section.
+The built report is to provide information in the Problem Questions Section. Below is the Dashboard for the report.
 
+![](Dashboard.png)
+
+I also built a Note Report Page where its purpose is to provide insights (by utilizing the Bookmark function) so that it can be quickly shown to the management / stakeholders. Later on, for future use, I can add as many insights as can be found based on the data. Yet, in this case I only provided 2 quick insights, i.e.: Portland 1000 Sales and Victoria Hits Positive.
+
+![](Notes.png)
 
 ## Analysis to answer the Problem Questions

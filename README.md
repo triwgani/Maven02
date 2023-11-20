@@ -3,20 +3,22 @@
 
 ![](MavenMarket.png)
 
-This Project Case is part of the Microsoft Power BI Desktop for Business Intelligence Course on [Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/) online platform by Maven Analytics. In this case, I am being put in the point of view of a Business Intelligence Analyst in **Maven Market**, a Multinational Grocery Chain with locations in **Canada, Mexico** and the **United States**. My role is to transform raw data into a dashboard report to help the Management Team track the KPI, montor and compare the performance, as well as identifiy some insights. I worked through the entire business intelligence workflow: **connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report**.
+This Project Case is part of the [Microsoft Power BI Desktop for Business Intelligence Course](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/) on [Udemy](https://www.udemy.com) online platform by Maven Analytics. In this case, I am being put in the point of view of a Business Intelligence Analyst in **Maven Market**, a Multinational Grocery Chain company whose business locations are in **Canada, Mexico** and the **United States**. My role is to transform raw data into a dashboard report to help the Management Team track the KPI, monitor and compare the performance, as well as identify some insights. I worked through the entire business intelligence workflow, i.e.: **connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report**.
 
 ## Problem Questions
 The Management Team would like to find out the Topline Performance of their products. This must be delivered by:
 - Defining the Top 30 Product Brands with highest Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
-- Providing KPI information displaying the Current Month Transactions vs Last Month Transaction, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
-- Displaying a visual geographical map showing Transaction by Cities in which the company stores are operating.
-- Providing information of Total Transaction in each of the country that can be drilled up/down so that the granularity of the information can be determined in either level of country, city, or state.
-- The management would like to know the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
+- Providing KPI information displaying the Current Month Transactions vs Last Month Transactions, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
+- Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
+- Providing information of Total Transaction in each of the country that can be drilled up/down, so that the granularity of the information can be determined in either level of country, city, or state.
+- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
 
 ## Datasets
 There are 7 Datasets used in this project, i.e.:
 
 **1. Customer Table Dataset (MavenMarket_Calendar.csv)**
+
+**Dataset Location:**
 
 | **Field Name** | **Data Type** |
 | ------ | ------ |
@@ -46,6 +48,8 @@ There are 7 Datasets used in this project, i.e.:
 
 **2. Products Table Dataset (MavenMarket_Products.csv)**
 
+**Dataset Location:**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | product_id | Whole Number |
@@ -61,6 +65,8 @@ There are 7 Datasets used in this project, i.e.:
 
 **3. Calendar Table Dataset (MavenMarket_Calendar.csv)**
 
+**Dataset Location:**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | date | Date |
@@ -73,6 +79,8 @@ There are 7 Datasets used in this project, i.e.:
 
 **4. Regions Table Dataset (MavenMarket_Regions.csv)**
 
+**Dataset Location:**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | region_id | Whole Number |
@@ -80,6 +88,8 @@ There are 7 Datasets used in this project, i.e.:
 | sales_region | Text |
 
 **5. Stores Table Dataset (MavenMarket_Stores.csv)**
+
+**Dataset Location:****Dataset Location:**
 
 | **Field Name** | **Data Type** |
 | ------ | ------ |
@@ -101,6 +111,8 @@ There are 7 Datasets used in this project, i.e.:
 
 **6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)**
 
+**Dataset Location:**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | transaction_date | Date |
@@ -111,14 +123,14 @@ There are 7 Datasets used in this project, i.e.:
 
 **7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)**
 
+**Dataset Location:**
+
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 |return_date | Date |
 | product_id | Whole Number |
 | store_id | Whole Number |
 | quantity | Whole Number |
-
-
 
 ## Connecting and Shaping the Data
 
@@ -201,7 +213,7 @@ There are several steps in this phase in order to connect and shape the Data use
 
 There are several steps in this phase in order to build a Relational Model.
 
-**1. In the MODEL view, arrange your tables with the lookup tables above the data tables by:**
+**1. In the MODEL view, arrange the tables so that the lookup tables are above the data tables by:**
 
 - Connecting Transaction_Data to Customers, Products, and Stores using valid primary/foreign keys 
 - Connecting Transaction_Data to Calendar using both date fields, with an inactive "stock_date" relationship
@@ -335,22 +347,39 @@ Last Month Returns = CALCULATE([Total Return],DATEADD('Calendar'[Date],-1,MONTH)
 Revenue Target = [Last Month Revenue]*1.05
 ```
 
-Executing the Two detailed Steps above, resulted in adding a new Table containing all Measures needed in the modelling.
+Executing all the detailed Steps in 2 spots above, resulted in adding a new Table containing all Measures needed in the modelling.
 
 ![](MeasureTable.png)
 
-The overall tables created the complete Realtion Model for all the data loaded in the Power Bi
+The overall tables created the complete Relation Model for all the data loaded in the Power Bi
 
 ![](AllTables.png)
 
 ## Building Interactive Report
 
-The built report is to provide information in the Problem Questions Section. Below is the Dashboard for the report.
+The report dashboard is to provide information in the Problem Questions Section. Below is the Dashboard for the report.
 
 ![](Dashboard.png)
 
-I also built a Note Report Page where its purpose is to provide insights (by utilizing the Bookmark function) so that it can be quickly shown to the management / stakeholders. Later on, for future use, I can add as many insights as can be found based on the data. Yet, in this case I only provided 2 quick insights, i.e.: Portland 1000 Sales and Victoria Hits Positive.
+I also built a Note Report Page where its purpose is to provide insights (by utilizing the Bookmark function) so that it can be quickly shown to the management / stakeholders. Later on, for future use, I can add as many insights as can be found based on the data. Yet, in this case I only provided 3 quick insights, i.e.: Portland 1000 Sales, Victoria Hits Positive, and Plato drove the highest profit rate.
 
 ![](Notes.png)
 
 ## Analysis to answer the Problem Questions
+- Defining the Top 30 Product Brands with highest Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
+**Solution:**
+
+- Providing KPI information displaying the Current Month Transactions vs Last Month Transactions, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
+**Solution:**
+
+- Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
+**Solution:**
+
+- Providing information of Total Transaction in each of the country that can be drilled up/down, so that the granularity of the information can be determined in either level of country, city, or state.
+**Solution:**
+
+- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
+**Solution:**
+
+## Report Dashboard Link:
+The live report dashboard can be found [here](f)

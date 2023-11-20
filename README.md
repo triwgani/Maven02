@@ -227,13 +227,38 @@ There are 2 spots in which I worked to add Calculation Fields and DAX, i.e. the 
 **1. In the DATA view, add the following calculated columns by:**
 
 - Adding a column in the Calendar table, named "Weekend", which equals "Y" for Saturdays or Sundays (otherwise "N")
+```Sh
+Weekend = 
+if('Calendar'[Name of Day] IN {"Saturday","Sunday"},"Y","N")
+```
 - Adding a column in the Calendar table, named "End of Month", that returns the last date of the current month for each row
+```Sh
+End of Month = EOMONTH('Calendar'[date],0)
+```
 - Adding a column in the Customers table, named "Current Age" that calculates current customer ages using the "birthdate" column and the TODAY() function
-- Adding a column in the Customers table, named "Priority" which equals "High" for customers who own homes and have Golden membership cards (otherwise "Standard")   
-- Adding a column in the Customers table, named "Short_Country" that returns the first three characters of the customer country, and converts to all uppercase 
+```Sh
+Current Age = DATEDIFF(Customers[birthdate], TODAY(), YEAR)
+```
+- Adding a column in the Customers table, named "Priority" which equals "High" for customers who own homes and have Golden membership cards (otherwise "Standard")
+```Sh
+Priority = IF(Customers[homeowner]="Y" && Customers[member_card]="Golden","High","Standard")
+```
+- Adding a column in the Customers table, named "Short_Country" that returns the first three characters of the customer country, and converts to all uppercase
+```Sh
+Short_Country = UPPER(LEFT(Customers[customer_country],3))
+```
 - Adding a column in the Customers table, named "House Number" that extracts all characters/numbers before the first space in the "customer_address" column (hint: use SEARCH)
+```Sh
+House Number = LEFT(Customers[customer_address],SEARCH(" ",Customers[customer_address])-1)
+```
 - Adding a column in the Products table, named "Price_Tier" that equals "High" if the retail price is >$3, "Mid" if the retail price is >$1, and "Low" otherwise
+```Sh
+Price_Tier = SWITCH(TRUE(),Products[product_retail_price]>3,"High",Products[product_retail_price]>1,"Mid","Low")
+```
 - Adding a column in the Stores table, named "Years_Since_Remodel" that calculates the number of years between the current date (TODAY()) and the last remodel date
+```Sh
+Years_Since_Remodel = DATEDIFF(Stores[last_remodel_date],TODAY(),YEAR)
+```
 
 **2. In the REPORT view, add the following measures (Assign to tables as you see fit, and use a matrix to match the "spot check" values) by:**
 

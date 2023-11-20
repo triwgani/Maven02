@@ -6,7 +6,10 @@
 This Project Case is part of the Microsoft Power BI Desktop for Business Intelligence Course on [Udemy](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/) online platform by Maven Analytics. In this case, I worked with data from **Maven Market**, a multi-national grocery chain with locations in **Canada, Mexico** and the **United States**. I worked through the entire business intelligence workflow: **connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report**.
 
 ## Problem Questions
-
+The Company Management Team would like to find out the Topline Performance of their products. This will be delivered by:
+- Defining the Top 30 Product Brands with highest Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
+- Providing KPI information displaying the Current Month Transactions vs Last Month Transaction, Current Month Profit vs Last Month Profit, Current Month Returns vs Last Month Returns.
+- Displaying a visual geographical map showing Transaction by Cities in which the company stores are operating.
 ## Datasets
 There are 7 Datasets used in this project, i.e.:
 
@@ -217,7 +220,7 @@ There are several steps in this phase in order to build a Relational Model.
 - In the Customers table, categorizing "customer_city" as City, "customer_postal_code" as Postal Code, and "customer_country" as Country/Region
 - In the Stores table, categorizing "store_city" as City, "store_state" as State or Province, "store_country" as Country/Region, and "full_address" as Address 
 
-The Steps above results in the following Relation Model:
+All the steps above resulted in the following Relation Model:
 
 ![](RelationModel.png)
 
@@ -338,5 +341,8 @@ The overall tables created the complete Realtion Model for all the data loaded i
 ![](AllTables.png)
 
 ## Building Interactive Report
+
+The built report is to provide information in the Problem Questions Section.
+
 
 ## Analysis to answer the Problem Questions

@@ -369,13 +369,19 @@ Based on the picture above, Hermanos peaked the position of the Top 30 Product B
 
 ![](QA2.png)
 
-Based on the scoreracds displayed above, the Total Transactions in the current month had reached 18,325 number of transaction. This has surpassed the target of 17,339 transaction (around 5.69% increment) above the last month transaction. This drove a 5.61% increment of profit which equals of a Total Profit of $ 71,682 in the current month. However, it turned out that in the same period, the current Monthly Returned also increased by 2.9% or equals 14 additional returns from the previous month return (482). 
+Based on the scoreracds displayed above, the Total Transactions in the current month had reached 18,325 number of transaction. This has surpassed the target of 17,339 transaction (around 5.69% increment) above the last month transaction. This drove a 5.61% increment of profit which equals of a Total Profit of $ 71,682 in the current month. However, it turned out that in the same period, the current Monthly Returned also increased by 2.9% or equals 14 additional returns from the previous month return (482). This means along with the increasing number of transaction, there was also an increasing number of goods returned. It is advisable to examine the cause as well of the type of the returned goods.
 
 - Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
 
 **Solution:**
 
 ![](QA3.png)
+
+If we expand the map on the Dashboard, we will se from the map above that it can be concluded that most of the stores are located in USA, while the country with the second most store is Mexico. Canada is in the 3rd place for number of store. This number of store drove the number of transaction as well as total profit gained (representated by the bubble size).
+
+![](QA3a.png)
+
+A quick spot check for Total Transactions and Total Profit for each country has confirmed that.
 
 - Providing information of Total Transaction in each of the country that can be drilled up/down, so that the granularity of the information can be determined in either level of country, city, or state.
 

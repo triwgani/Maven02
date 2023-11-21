@@ -400,4 +400,4 @@ The Treemap above implies that most of the Transaction happened in the USA. This
 Based on the visuals above, the revenue experienced fluctuation over the time during year 1998. The highest revenue ever achieved was $ 120K, a slightly different from the corresponding target of around $ 119K.
 
 ## Report Dashboard Link:
-The live report dashboard can be found [here](f)
+The live report dashboard can be found [here](https://app.powerbi.com/groups/me/reports/aa4bad5c-0c93-4414-a8af-5376159b304b/ReportSection1d63a5027250201e045d?experience=power-bi)

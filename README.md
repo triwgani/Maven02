@@ -11,7 +11,7 @@ The Management Team would like to find out the Topline Performance of their prod
 - Providing KPI information displaying the Current Month Transactions vs Last Month Transactions, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
 - Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
 - Providing information of Total Transaction in each of the country that can be drilled up/down, so that the granularity of the information can be determined in either level of country, city, or state.
-- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
+- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out the highest monthly revenue ever achieved.
 
 ## Datasets
 
@@ -367,17 +367,26 @@ Based on the picture above, Hermanos peaked the position of the Top 30 Product B
 
 **Solution:**
 
+![](QA2.png)
+
+
 - Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
 
 **Solution:**
+
+![](QA3.png)
 
 - Providing information of Total Transaction in each of the country that can be drilled up/down, so that the granularity of the information can be determined in either level of country, city, or state.
 
 **Solution:**
 
-- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
+![](QA4.png)
+
+- Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out the highest monthly revenue ever achieved.
 
 **Solution:**
+
+![](QA5.png)
 
 ## Report Dashboard Link:
 The live report dashboard can be found [here](f)

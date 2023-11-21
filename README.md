@@ -369,6 +369,7 @@ Based on the picture above, Hermanos peaked the position of the Top 30 Product B
 
 ![](QA2.png)
 
+Based on the scoreracds displayed above, the Total Transactions in the current month had reached 18,325 number of transaction. This has surpassed the target of 17,339 transaction (around 5.69% increment) above the last month transaction. This drove a 5.61% increment of profit which equals of a Total Profit of $ 71,682 in the current month. However, it turned out that in the same period, the current Monthly Returned also increased by 2.9% or equals 14 additional returns from the previous month return (482). 
 
 - Displaying a visual geographical map showing Transactions by Cities in which the company stores are operating.
 

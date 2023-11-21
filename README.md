@@ -355,9 +355,13 @@ I also built a Note Report Page where its purpose is to provide insights (by uti
 ![](Notes.png)
 
 ## Analysis to answer the Problem Questions
-- Defining the Top 30 Product Brands with highest Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
+- Defining the Top 30 Product Brands with most Total Transactions and their corresponding Profit, Profit Margin, as well as Return Rate in descending order.
 
 **Solution:**
+
+![](QA1.png)
+
+Based on the picture above, Hermanos peaked the position of the Top 30 Product Brands with the most Total Transaction of 5,342 with Total Profit of $ 21,753 and Margin of 58.64%, as well as Return Rate of 0.95%. Its position is followed by Ebony and Tell Tale in the second and third position. All the Top 30 Product Brand drove a total of 113,668 Transactions, with acumulative Profit Margin of 59.94% that equals to Total Profit of $ 449,627, and total Return Rate of 1.00%.
 
 - Providing KPI information displaying the Current Month Transactions vs Last Month Transactions, Current Month Profit vs Last Month Profit, and Current Month Returns vs Last Month Returns.
 

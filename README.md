@@ -14,11 +14,12 @@ The Management Team would like to find out the Topline Performance of their prod
 - Providing the weekly trending of the company's revenue, especially during the year 1998. Besides that, the management also wanted to find out if the monthly revenue had been achieved or not by comparing the Monthly Revenue vs the Monthly Target Revenue.
 
 ## Datasets
+
+![](ProcessFlow.png)
+
 There are 7 Datasets used in this project, i.e.:
 
-**1. Customer Table Dataset (MavenMarket_Calendar.csv)**
-
-**Dataset Location:**
+**1. Customer Table Dataset (MavenMarket_Customers.csv)**
 
 | **Field Name** | **Data Type** |
 | ------ | ------ |
@@ -48,8 +49,6 @@ There are 7 Datasets used in this project, i.e.:
 
 **2. Products Table Dataset (MavenMarket_Products.csv)**
 
-**Dataset Location:**
-
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | product_id | Whole Number |
@@ -65,8 +64,6 @@ There are 7 Datasets used in this project, i.e.:
 
 **3. Calendar Table Dataset (MavenMarket_Calendar.csv)**
 
-**Dataset Location:**
-
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | date | Date |
@@ -79,8 +76,6 @@ There are 7 Datasets used in this project, i.e.:
 
 **4. Regions Table Dataset (MavenMarket_Regions.csv)**
 
-**Dataset Location:**
-
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | region_id | Whole Number |
@@ -88,8 +83,6 @@ There are 7 Datasets used in this project, i.e.:
 | sales_region | Text |
 
 **5. Stores Table Dataset (MavenMarket_Stores.csv)**
-
-**Dataset Location:****Dataset Location:**
 
 | **Field Name** | **Data Type** |
 | ------ | ------ |
@@ -111,8 +104,6 @@ There are 7 Datasets used in this project, i.e.:
 
 **6. Transaction Table Dataset (MavenMarket_Transactions_1997 & MavenMarket_Transactions_1998.csv)**
 
-**Dataset Location:**
-
 | **Field Name** | **Data Type** |
 | ------ | ------ |
 | transaction_date | Date |
@@ -122,8 +113,6 @@ There are 7 Datasets used in this project, i.e.:
 | store_id | Whole Number |
 
 **7. Return Table Dataset (MavenMarket_Returns_1997-1998.csv)**
-
-**Dataset Location:**
 
 | **Field Name** | **Data Type** |
 | ------ | ------ |

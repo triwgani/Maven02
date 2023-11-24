@@ -174,7 +174,7 @@ There are several steps in this phase in order to connect and shape the Data use
 
 - Naming the table "Calendar" and making sure that headers have been promoted
 - Using the date tools in the query editor to add the following columns:
-    > Start of Week (starting Sunday, Name of Day, Start of Month, Name of Month, Quarter of Year, Year
+    > Start of Week, Name of Day, Start of Month, Name of Month, Quarter of Year, Year
 
 ![](Calendar.png)
 
